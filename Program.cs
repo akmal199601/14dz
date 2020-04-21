@@ -35,6 +35,59 @@ namespace dz20._04
                             System.Console.WriteLine("$ Result is :{result}");
                             System.Console.WriteLine("======");
                         } break;
+                    case "2":
+                        {
+                            System.Console.WriteLine("Введите первое число");
+                            double x = Convert.ToDouble(Console.ReadLine());
+                            System.Console.WriteLine("Введите второе число");
+                            double y = Convert.ToDouble(Console.ReadLine());
+                            if (x != 0 && y != 0)
+                            {
+                                akmal<double> mult = div<double>;
+                                double result = mult.Invoke(x, y);
+                                System.Console.WriteLine("======");
+                                System.Console.WriteLine("$ Result is :{result}");
+                                System.Console.WriteLine("======");
+                            }
+                            else
+                            {
+                                System.Console.WriteLine("=======");
+                                System.Console.WriteLine("if(User==AkiAziz){на ноль делить нельзя}else{Короче придурок на ноль делить нельзя в школе неучили ЧМО}})");
+                                System.Console.WriteLine("=======");
+                            }
+                        } break;
+                    case "3":
+                        {
+                            System.Console.WriteLine("Введите ваше первое число");
+                            double x = Convert.ToDouble(Console.ReadLine());
+                            System.Console.WriteLine("Введите ваше второе число");
+                            double y = Convert.ToDouble(Console.ReadLine());
+                            akmal<double> mult = sum<double>;
+                            double result = mult.Invoke(x, y);
+                            System.Console.WriteLine("======");
+                            System.Console.WriteLine("$ result is :{result}");
+                            System.Console.WriteLine("======");
+                        } break;
+                    case "4":
+                        {
+                            System.Console.WriteLine("Введите ваше первое число");
+                            double x = Convert.ToDouble(Console.ReadLine());
+                            System.Console.WriteLine("Введите ваше второе число");
+                            double y = Convert.ToDouble(Console.ReadLine());
+                            akmal<double> mult = min<double>;
+                            double result = mult.Invoke(x, y);
+                            System.Console.WriteLine("======");
+                            System.Console.WriteLine("$ result is :{result}");
+                            System.Console.WriteLine("======");
+                        } break;
+                    case "5": s = false; break;
+                        {
+                            System.Console.WriteLine("======");
+                            System.Console.WriteLine("Выход");
+                            Console.WriteLine("=======");
+                        } break;
+                    default:
+                        break;
                 }
             }
         }
